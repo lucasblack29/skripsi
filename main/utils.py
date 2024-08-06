@@ -1,6 +1,6 @@
-from flask import Flask
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy.orm import Mapped, mapped_column
+from flask import Flask,flash,render_template,request,url_for,redirect
+from flask import Blueprint
+from flask.views import View
 from flask_mysqldb import MySQL
 application=Flask(__name__)
 application.secret_key='38e91d5c0779f65748ecb0edad7e3bcd8d463d5f448c62bef6bb6050c5ad4a19'
